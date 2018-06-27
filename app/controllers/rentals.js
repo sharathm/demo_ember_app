@@ -3,6 +3,7 @@ import { ability } from 'ember-can/computed';
 import { inject as service } from '@ember/service';
 export default Controller.extend({
   can: service(), // inject can service
+  session: service('session'),
   ability : ability('rental'),
   actions: {
     filterByCity(param) {

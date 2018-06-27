@@ -29,6 +29,9 @@ module.exports = function(environment) {
   },
 ENV['simple-auth-devise'] = {
     serverTokenEndpoint: 'http://localhost:3000/login',
+    authorizationPrefix: 'Bearer ',
+    tokenPropertyName: 'token',
+    identificationField: 'email',
   }
 
   if (environment === 'development') {
