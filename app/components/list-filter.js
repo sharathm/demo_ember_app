@@ -11,7 +11,6 @@ export default Component.extend({
       this.set('results', allResults.results);
     });
   },
-  ability : ability('rental'),
   actions: {
     handleFilterEntry() {
       let filterInputValue = this.get('value');

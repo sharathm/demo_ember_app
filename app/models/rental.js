@@ -7,5 +7,6 @@ export default DS.Model.extend({
   category: DS.attr(),
   image: DS.attr(),
   bedrooms: DS.attr(),
-  description: DS.attr()
+  description: DS.attr(),
+  canEnlarge :DS.attr('boolean')
 });
