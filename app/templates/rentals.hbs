@@ -2,9 +2,11 @@
   <div class="right tomster"></div>
   <h2>Welcome!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
+  {{#if (can 'show about user')}}
   {{#link-to "about" class="button"}}
     About Us
   {{/link-to}}
+  {{/if}}
 </div>
 {{#if ability.canList}}
 {{#list-filter

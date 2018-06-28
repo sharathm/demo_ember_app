@@ -6,7 +6,12 @@
     </h1>
     {{/link-to}}
     <div class="links">
-      {{#link-to "about" class="menu-about"}} About {{/link-to}} {{#link-to "contact" class="menu-contact"}} Contact {{/link-to}}
+      {{#if (can 'show about user')}}
+      {{#link-to "about" class="menu-about"}} About {{/link-to}}
+      {{/if}}
+      {{#if (can 'show contact user')}}
+      {{#link-to "contact" class="menu-contact"}} Contact {{/link-to}}
+      {{/if}}
     </div>
 
   </div>
